@@ -35,3 +35,13 @@ full_prompt = prompt_template.format(transcript=transcript)
 
 llm_response = chat_with_groq(client, full_prompt, model, {"type": "json_object"})
 print(llm_response)
+
+
+# 3) Load & format reviewer prompt
+with open("reviewer_prompt.txt", "r", encoding="utf-8") as f:
+    tmpl = f.read()
+reviewer_prompt = tmpl.format(llm_response=llm_response)
+
+final_output = chat_with_groq(client, reviewer_prompt, model, {"type":"json_object"})
+
+print(final_output)
