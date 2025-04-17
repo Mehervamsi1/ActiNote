@@ -1,2 +1,3 @@
 #.gitignore
 .env
+meeting_prompt.txt

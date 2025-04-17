@@ -25,24 +25,13 @@ groq_key = os.getenv('GROQ_API_KEY')
 client = Groq(api_key=groq_key)
 model = "llama3-8b-8192"
 
-full_prompt = f"""
-You are a meeting assistant. Analyze the following Microsoft Teams meeting transcript and extract the following:
-1. A concise summary of the entire meeting.
-2. The main agenda(s) discussed.
-3. The key takeaways or action items.
-4. Determine whether a follow‐up meeting was discussed:
-   - If yes, extract the proposed date, time, and purpose of the next meeting.
-   - If no, respond with: "No follow‐up meeting discussed."
+# load the prompt template
+with open("meeting_prompt.txt", "r", encoding="utf-8") as f:
+    prompt_template = f.read()
 
-Provide your answer as a JSON object with these keys:
-- summary (string)
-- agendas (array of strings)
-- action_items (array of strings)
-- follow_up (object with keys "date", "time", "purpose", or the string "No follow-up meeting discussed")
+# inject your transcript text
+full_prompt = prompt_template.format(transcript=transcript)
 
-Transcript:
-{transcript}
-"""
 
 llm_response = chat_with_groq(client, full_prompt, model, {"type": "json_object"})
 print(llm_response)
