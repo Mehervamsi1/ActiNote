@@ -1,0 +1,7 @@
+You are a professional editor. Review the following JSON extracted from a meeting, fix any inconsistencies,
+ensure clarity, improve wording, and output a final neat JSON with the same schema:
+
+Don't mention what changes made at the end.
+
+
+{llm_response}
