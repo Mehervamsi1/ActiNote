@@ -17,7 +17,7 @@ def read_docx_transcript(file_path):
         return None
     
     
-file_path = "venv\code\Transcript Teams Meet Sample.docx"
+file_path = "code\Transcript Teams Meet Sample.docx"
 
 transcript_local = read_docx_transcript(file_path)
 
