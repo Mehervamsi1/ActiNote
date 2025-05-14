@@ -1,0 +1,101 @@
+{
+    "meeting": {
+      "title": "Full Stack Python Project Discussion",
+      "date": "2025-04-26",
+      "time": "11:00 AM CST",
+      "participants": [
+        {"name": "Pragna P","email": "PragnaP@AIReactor.onmicrosoft.com", "role": "Project Manager"},
+        {"name": "Meher D","email": "meherd@aieactor.onmicrosoft.com", "role": "Backend Developer"},
+        {"name": "Syam A","email": "syama@aireactor.onmicrosoft.com", "role": "Frontend Developer"},
+        {"name": "Daniel Martinez","email": "dm@AIReactor.onmicrosoft.com", "role": "DevOps Engineer"},
+        {"name": "Emily Davis","email": "ed@AIReactor.onmicrosoft.com", "role": "Data Scientist"}
+      ],
+      "discussion": [
+        {
+          "speaker": "Pragna P",
+          "message": "Hi everyone! Thanks for joining. Let’s dive right into the Full Stack Python Project updates. First, a quick round — how are we progressing on the backend services?"
+        },
+        {
+          "speaker": "Meher D",
+          "message": "Hey Alice. Backend is coming along well. I’ve set up the Django REST API, and the authentication modules are almost ready. We’re using JWT tokens for authentication, as we discussed last time. Right now, I’m working on optimizing the database models. Should be ready for a preliminary demo by early next week."
+        },
+        {
+          "speaker": "Pragna P",
+          "message": "That sounds good, Brian. Are you facing any blockers?"
+        },
+        {
+          "speaker": "Meher D",
+          "message": "Not major ones yet. Just a small thing — we might want to finalize the schema for the 'user activity logs' sooner, so I can avoid rework later."
+        },
+        {
+          "speaker": "Pragna P",
+          "message": "Got it. We'll add that to today’s action items."
+        },
+        {
+          "speaker": "Pragna P",
+          "message": "Catherine, how’s the frontend shaping up?"
+        },
+        {
+          "speaker": "Syam A",
+          "message": "Hi everyone. The frontend base is ready. We’re building the UI in React.js with TailwindCSS for styling, as decided. I’ve already integrated login and signup pages with Brian’s test API endpoints. I’m currently working on the dashboard layout. Some components like profile management and real-time notifications are pending, but I think if I get final API contracts by next Monday, we’ll stay on track."
+        },
+        {
+          "speaker": "Pragna P",
+          "message": "Great job, Catherine!"
+        },
+        {
+          "speaker": "Pragna P",
+          "message": "Daniel, over to you. Any updates on the infrastructure setup?"
+        },
+        {
+          "speaker": "Daniel Martinez",
+          "message": "Hi all. So, I’ve created the initial Docker containers for the backend and frontend separately. Both services are running fine locally and I’m drafting the Docker Compose file for smoother orchestration. I’ve also set up a basic CI/CD pipeline on GitHub Actions. Once we finalize which AWS services we’re using (I’m thinking ECS + RDS?), I can automate deployment too."
+        },
+        {
+          "speaker": "Pragna P",
+          "message": "Excellent progress, Daniel. Maybe in the next meeting, we can finalize the AWS architecture with you. Make a note of that, please."
+        },
+        {
+          "speaker": "Daniel Martinez",
+          "message": "Will do."
+        },
+        {
+          "speaker": "Pragna P",
+          "message": "Emily, any progress on the data science part?"
+        },
+        {
+          "speaker": "Emily Davis",
+          "message": "Hi everyone! Yes, from the data side, I’ve begun exploring how we can incorporate some smart recommendations into the platform — like suggesting personalized content to users. I’m preparing a prototype using a basic clustering algorithm. I'll need some real user activity data to refine it, but for now, I'll proceed with mock data."
+        },
+        {
+          "speaker": "Meher D",
+          "message": "Emily, once I finalize the user activity logs, I’ll make sure you get sample data from the dev database."
+        },
+        {
+          "speaker": "Emily Davis",
+          "message": "Perfect, thanks Brian!"
+        },
+        {
+          "speaker": "Pragna P",
+          "message": "Good coordination, everyone. Before we wrap up, here are some action items:"
+        }
+      ],
+      "action_items": [
+        "Brian: Finalize user activity schema and share with the team.",
+        "Catherine: Continue dashboard development, integrate as APIs are finalized.",
+        "Daniel: Prepare a draft AWS deployment plan and Docker Compose file.",
+        "Emily: Build a basic model prototype with mock data.",
+        "Alice: Consolidate all the requirements and prepare the final API contract document."
+      ],
+      "next_meeting": {
+        "date": "2025-04-29",
+        "time": "10:00 AM CST",
+        "confirmed_by": ["Meher D", "Syam A", "Daniel Martinez", "Emily Davis"]
+      },
+      "conclusion": {
+        "speaker": "Pragna P",
+        "message": "Awesome! I’ll send out the invite after this call. Thanks, everyone! Keep up the great work. See you all on April 29th at 10:00 AM CST. Meeting Adjourned."
+      }
+    }
+  }
+  
